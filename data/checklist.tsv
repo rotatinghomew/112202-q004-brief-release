@@ -1,0 +1,7 @@
+edition	position	permitted
+blue	bird	bird-b,bird-g
+blue	wheel	wheel-b
+blue	vessel	vessel-b,vessel-g
+grey	bird	bird-g
+grey	wheel	wheel-b,wheel-g
+grey	vessel	vessel-g

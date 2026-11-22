@@ -1,9 +1,0 @@
-pack	component	month	channel	lower	upper	received
-G1	TAG	2	shop	350	460	3
-G2	NB1	3	bulk	1530	1900	4
-G2	TAG	3	bulk	700	880	4
-G2	NB1	4	bulk	1530	1990	6
-G2	TAG	4	bulk	700	910	6
-PZ	NB2	4	shop	1580	1860	6
-G2	NB1	4	shop	1600	2050	6
-G2	TAG	4	shop	700	950	6

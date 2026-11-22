@@ -1,0 +1,8 @@
+visit_block	wave	assigned	chance	visited	until	city
+H1	past	invited	0.5	yes	23	A
+H2	past	ordinary	0.5	yes	25	A
+H3	past	ordinary	0.5	yes	26	B
+H4	past	invited	0.5	yes	15	B
+H5	current	invited	0.5	yes	43	A
+H6	current	ordinary	0.5	yes	45	A,B
+H7	current	ordinary	0.5	yes	38	B

@@ -1,0 +1,7 @@
+record	candidate	received	status
+E17	C17	27	possible
+E17	U1	27	possible
+E17	U1	33	confirmed
+E18	C12	30	possible
+E18	U2	30	possible
+E18	U2	37	confirmed

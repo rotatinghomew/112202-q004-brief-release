@@ -1,71 +1,77 @@
 {
-  "items.tsv": [
-    "sku",
-    "pack",
-    "pieces",
-    "grade",
-    "finish"
+  "albums.tsv": [
+    "album",
+    "edition",
+    "city",
+    "opened",
+    "visit_block",
+    "horizon",
+    "protected"
   ],
-  "bundles.tsv": [
-    "pack",
-    "component",
-    "qty",
-    "start",
-    "end"
+  "design.tsv": [
+    "visit_block",
+    "wave",
+    "assigned",
+    "chance",
+    "visited",
+    "until",
+    "city"
   ],
-  "quotes.tsv": [
-    "trade",
-    "month",
-    "channel",
-    "sku",
-    "units",
-    "gross",
-    "discount",
-    "discount_basis",
-    "received"
+  "checklist.tsv": [
+    "edition",
+    "position",
+    "permitted"
   ],
-  "bridges.tsv": [
-    "submission",
-    "previous",
-    "replacement",
-    "channel",
-    "start",
-    "basis",
-    "approval",
-    "received"
+  "cards.tsv": [
+    "mark",
+    "design",
+    "minted",
+    "available",
+    "city"
   ],
-  "component_bounds.tsv": [
-    "pack",
-    "component",
-    "month",
-    "channel",
-    "lower",
-    "upper",
-    "received"
-  ],
-  "weights.tsv": [
-    "basket",
-    "channel",
-    "anchor",
-    "grade",
-    "share"
-  ],
-  "wholesale.tsv": [
-    "contract",
-    "basket",
-    "base",
-    "coverage",
-    "trigger",
-    "consecutive",
-    "next_period"
-  ],
-  "announcements.tsv": [
+  "movements.tsv": [
     "record",
-    "contract",
-    "month",
-    "as_of",
-    "state",
-    "old_index",
-    "price_sheet"
+    "album",
+    "mark",
+    "design",
+    "action",
+    "day",
+    "received",
+    "via"
+  ],
+  "possibilities.tsv": [
+    "record",
+    "candidate",
+    "received",
+    "status"
+  ],
+  "requests.tsv": [
+    "request",
+    "album",
+    "channel",
+    "latest",
+    "available_city",
+    "destination"
+  ],
+  "delivery.tsv": [
+    "from",
+    "to",
+    "earliest",
+    "latest",
+    "max_parcels"
+  ],
+  "commitments.tsv": [
+    "dispatch",
+    "album",
+    "marks",
+    "sent",
+    "promised",
+    "state"
+  ],
+  "guarantees.tsv": [
+    "phase",
+    "min_additional",
+    "protected_fraction",
+    "cutoff"
   ]
 }

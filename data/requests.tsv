@@ -1,0 +1,6 @@
+request	album	channel	latest	available_city	destination
+R8	A8	mail	38	A,B	A
+R9	A9	mail	41	A,B	A
+R10	A10	counter	42	B	B
+R11	A11	mail	40	A,B	B
+R12	A12	mail	39	A,B	B

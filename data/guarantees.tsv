@@ -1,0 +1,4 @@
+phase	min_additional	protected_fraction	cutoff
+spring	1	0.25	31
+spring	1	0.25	34
+spring	1	0.25	38

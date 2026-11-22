@@ -1,0 +1,5 @@
+from	to	earliest	latest	max_parcels
+A	A	1	2	3
+A	B	3	5	1
+B	A	2	4	2
+B	B	1	2	3

@@ -1,0 +1,13 @@
+album	edition	city	opened	visit_block	horizon	protected
+A1	blue	A	1	H1	18	yes
+A2	blue	A	1	H2	18	yes
+A3	grey	A	2	H1	18	no
+A4	blue	B	2	H3	18	yes
+A5	grey	B	2	H4	18	no
+A6	blue	B	7	H3	18	yes
+A7	grey	B	7	H4	18	no
+A8	blue	A	24	H5	18	yes
+A9	blue	A	24	H6	18	yes
+A10	grey	B	26	H6	18	no
+A11	grey	B	26	H7	18	no
+A12	blue	B	27	H7	18	yes
