@@ -1,0 +1,4 @@
+record	contract	month	as_of	state	old_index	price_sheet
+A3	L1	3	4	provisional	?	-
+A4	L1	4	7	signed	?	PX11
+A5	L2	4	7	quoted	104	PX22

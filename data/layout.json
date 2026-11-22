@@ -1,57 +1,71 @@
 {
-  "sales.tsv": [
-    "deal",
-    "period",
-    "counter",
-    "product",
-    "studios",
-    "refunded"
+  "items.tsv": [
+    "sku",
+    "pack",
+    "pieces",
+    "grade",
+    "finish"
   ],
-  "availability.tsv": [
-    "period",
-    "counter",
-    "product",
-    "state"
+  "bundles.tsv": [
+    "pack",
+    "component",
+    "qty",
+    "start",
+    "end"
   ],
-  "audience.tsv": [
-    "reader",
-    "share_with"
-  ],
-  "direct.tsv": [
-    "reader",
-    "period",
-    "counter",
-    "product",
-    "metric",
-    "value"
-  ],
-  "releases.tsv": [
-    "id",
-    "reader",
-    "period",
-    "counter",
-    "product",
-    "metric",
-    "rev",
-    "lo",
-    "hi",
-    "state"
-  ],
-  "requests.tsv": [
-    "request",
-    "reader",
-    "period",
-    "dimensions",
-    "metrics",
-    "max_small",
-    "min_width",
-    "utility"
-  ],
-  "corrections.tsv": [
-    "record",
-    "deal",
-    "rev",
-    "refunded",
+  "quotes.tsv": [
+    "trade",
+    "month",
+    "channel",
+    "sku",
+    "units",
+    "gross",
+    "discount",
+    "discount_basis",
     "received"
+  ],
+  "bridges.tsv": [
+    "submission",
+    "previous",
+    "replacement",
+    "channel",
+    "start",
+    "basis",
+    "approval",
+    "received"
+  ],
+  "component_bounds.tsv": [
+    "pack",
+    "component",
+    "month",
+    "channel",
+    "lower",
+    "upper",
+    "received"
+  ],
+  "weights.tsv": [
+    "basket",
+    "channel",
+    "anchor",
+    "grade",
+    "share"
+  ],
+  "wholesale.tsv": [
+    "contract",
+    "basket",
+    "base",
+    "coverage",
+    "trigger",
+    "consecutive",
+    "next_period"
+  ],
+  "announcements.tsv": [
+    "record",
+    "contract",
+    "month",
+    "as_of",
+    "state",
+    "old_index",
+    "price_sheet"
   ]
 }

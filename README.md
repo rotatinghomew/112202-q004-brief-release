@@ -1,4 +1,4 @@
-# 经营简报底稿
+# 文创试销成交与价格约定
 
 `data/` 为离线合成业务记录。文件均为 UTF-8 的 Tab 分隔表，首行是列名，逗号分隔集合，`-` 表示不适用，`?` 表示未取得，不把它们当作零。标识符只在各表声明的归属范围内有效。
 
@@ -14,11 +14,11 @@ python3 -m unittest discover -s tests
 前一条命令只检查表头和记录形状并显示行数。可传入另一目录读取同格式记录。当前没有分析、决策或业务处理结果。
 
 ## 输入表
-
-- `sales.tsv`：成交 ID 唯一；每个已结成交计一次；refunded=1 表示发生退款。一笔可有多个工作室。参与数为所在格内曾参与成交的工作室并集。 列顺序为 `deal`、`period`、`counter`、`product`、`studios`、`refunded`。
-- `availability.tsv`：格状态：closed 表示业务禁售的结构零，missing 表示来源缺测（不是零），complete 表示采集完整。未列出的为 complete。 列顺序为 `period`、`counter`、`product`、`state`。
-- `audience.tsv`：share_with 为明确可共享经营简报的直接联系，按连通分享考虑；不含内部审核员。 列顺序为 `reader`、`share_with`。
-- `direct.tsv`：受众获准直接获知当前事实的范围；all 为该维总计，metrics 为 deals/studios/returns。 列顺序为 `reader`、`period`、`counter`、`product`、`metric`、`value`。
-- `releases.tsv`：已签、已送达、候审各自状态；同一期 rev 更高为更正版。相等上下界为精确披露；上期发出的精确件即使被新稿替换仍可见。 列顺序为 `id`、`reader`、`period`、`counter`、`product`、`metric`、`rev`、`lo`、`hi`、`state`。
-- `requests.tsv`：dimensions 用逗号分隔；小格定义为 1 到 max_small（含）；min_width 按整数上下界之差；utility 为一级汇总优先权（越大越重要）。 列顺序为 `request`、`reader`、`period`、`dimensions`、`metrics`、`max_small`、`min_width`、`utility`。
-- `corrections.tsv`：交易退款事实的复核，以收到后的新 rev 为准；旧发布口径不随之抹掉。 列顺序为 `record`、`deal`、`rev`、`refunded`、`received`。
+- `items.tsv`：pack 是原始规格；pieces 是该销售单位件数；grade 与 finish 为采购核定的规格字段。 列为 `sku`、`pack`、`pieces`、`grade`、`finish`。
+- `bundles.tsv`：包装在 start 至 end（不含）月份内生效；可含另一层销售包装。 列为 `pack`、`component`、`qty`、`start`、`end`。
+- `quotes.tsv`：金额分；discount_basis=order 表示整行一次折扣，unit 表示每销售单位；received 为月份内来源批次序号，跨月也是同一递增序列。 列为 `trade`、`month`、`channel`、`sku`、`units`、`gross`、`discount`、`discount_basis`、`received`。
+- `bridges.tsv`：basis 表示单位等价、经核实际件数比例或档次改换；approval 可为核准、待核或撤回，最新收到记录可改变状态。 列为 `submission`、`previous`、`replacement`、`channel`、`start`、`basis`、`approval`、`received`。
+- `component_bounds.tsv`：所涉礼包每销售单位中该成分可支持的最低和最高金额，来源为同类规格独售记录与采购裁定。 列为 `pack`、`component`、`month`、`channel`、`lower`、`upper`、`received`。
+- `weights.tsv`：分合同篮和渠道固定，share 为百分数。 列为 `basket`、`channel`、`anchor`、`grade`、`share`。
+- `wholesale.tsv`：coverage、trigger 均为百分数；next_period 是目前还可变更的付款月份。 列为 `contract`、`basket`、`base`、`coverage`、`trigger`、`consecutive`、`next_period`。
+- `announcements.tsv`：旧公告只记录当初正式结论；? 表示当时未能出指数；已锁价单不可重发覆盖。 列为 `record`、`contract`、`month`、`as_of`、`state`、`old_index`、`price_sheet`。

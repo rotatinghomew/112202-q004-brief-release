@@ -1,0 +1,7 @@
+submission	previous	replacement	channel	start	basis	approval	received
+B1	PC3	PCX	bulk	2	same	accepted	2
+B2	PC3	PC4	shop	3	count	accepted	4
+B3	PCX	PC4	bulk	3	count	pending	4
+B4	PC3	PCB	shop	3	grade	rejected	4
+B3	PCX	PC4	bulk	3	count	accepted	9
+B5	NB1	NB2	shop	4	grade	rejected	6

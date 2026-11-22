@@ -1,0 +1,11 @@
+sku	pack	pieces	grade	finish
+PC3	cards	3	A	matte
+PC4	cards	4	A	matte
+PCX	renamed	3	A	matte
+PCB	cards	3	B	gloss
+NB1	pad	1	A	matte
+NB2	pad	1	B	gloss
+TAG	tag	1	A	matte
+G1	gift	1	A	matte
+G2	gift	1	A	matte
+PZ	bag	1	A	matte
