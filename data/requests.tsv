@@ -1,0 +1,4 @@
+request	reader	period	dimensions	metrics	max_small	min_width	utility
+D1	workshop	P1	counter,product	returns,deals	2	2	8
+D2	sponsor	P1	counter	returns,studios	2	2	5
+D3	shop	P2	product,counter	deals,returns,studios	2	1	7
